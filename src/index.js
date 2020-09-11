@@ -1,6 +1,7 @@
 const path = require('path')
 const JSZIP = require('jszip')
 const fs = require('fs')
+
 const pluginName = 'WebpackDistZip'
 
 const defaultOption = {
@@ -50,4 +51,4 @@ class WebpackDistZip {
   }
 }
 
-export default WebpackDistZip
+module.exports = WebpackDistZip

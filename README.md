@@ -8,7 +8,7 @@ npm install --save-dev webpack-dist-zip
 
 ## Usage
 ```
-const { WebpackDistZip } = require('webpack-dist-zip');
+const WebpackDistZip = require('webpack-dist-zip');
 const webpackConfig = {
     plugins: [
         new WebpackDistZip(),

@@ -1,23 +1,34 @@
 {
   "name": "webpack-dist-zip",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "version": "1.1.0",
+  "description": "This plugin zip your dist each time at the end of the build.",
+  "main": "lib/index.js",
   "scripts": {
-    "build": "webpack --config webpack.config.js",
+    "build": "npx babel src --out-dir lib --ignore \"src/**/*.spec.js\",\"src/**/*.test.js\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "webpack",
+    "plugin"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/weidapao/webpack-dist-zip"
+  },
+  "author": "weizy",
+  "license": "MIT",
+  "files": [
+    "lib/"
+  ],
   "dependencies": {
     "jszip": "^3.5.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.2.2",
-    "@babel/plugin-transform-runtime": "^7.2.0",
-    "@babel/preset-env": "^7.2.3",
-    "babel-loader": "^8.0.5",
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.4",
+    "@babel/plugin-transform-runtime": "^7.11.5",
+    "@babel/preset-env": "^7.4.4",
+    "babel-loader": "^8.1.0",
     "eslint": "^7.8.1",
     "eslint-loader": "^4.0.2",
     "eslint-plugin-react": "^7.20.6",
